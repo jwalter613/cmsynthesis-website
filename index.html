@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CMS Alpine — A desktop groovebox built for writing, arranging, and performing. Open firmware. Built to last.">
+  <meta property="og:title" content="CMS Alpine">
+  <meta property="og:description" content="Made for the long session. A desktop groovebox built without compromise.">
+  <meta property="og:type" content="website">
+  <title>CMS Alpine — Made for the Long Session</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+
+  <!-- ======================================================
+       NAV
+  ====================================================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="CMS Alpine home">
+        <span class="nav__cms">CMS</span>
+        <span class="nav__dot" aria-hidden="true"></span>
+        <span class="nav__alpine">Alpine</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html#notify">Contact</a></li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="hero__inner">
+
+      <span
+        class="hero__label hero__label--type"
+        data-text="CMS Alpine — Desktop Groovebox"
+        style="visibility: hidden;"
+        aria-label="CMS Alpine — Desktop Groovebox"
+      >CMS Alpine — Desktop Groovebox</span>
+
+      <h1 class="hero__headline" id="hero-headline">
+        Made for<br>the long <em>session.</em>
+      </h1>
+
+      <p class="hero__subhead">
+        A desktop groovebox built for writing, arranging, and performing.
+        Direct controls. Open firmware. Made to be repaired, not replaced.
+      </p>
+
+      <div class="hero__actions">
+        <a href="product.html" class="btn btn--primary">Learn More</a>
+        <a href="product.html#notify" class="btn btn--ghost">Notify Me</a>
+      </div>
+
+      <!-- Product render placeholder -->
+      <div class="render-placeholder render-placeholder--hero hero__render" role="img" aria-label="CMS Alpine product render — photography coming soon">
+        <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+        <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+        <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+        <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+        <span class="render-placeholder__label">CMS Alpine</span>
+        <span class="render-placeholder__sublabel">Photography Coming Soon</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FEATURE PILLARS
+  ====================================================== -->
+  <section class="section" aria-labelledby="pillars-heading">
+    <div class="container">
+
+      <hr class="rule-red" aria-hidden="true">
+
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">What it does</span>
+        <h2 class="section-header__title" id="pillars-heading">Built with intent.</h2>
+        <p class="section-header__body">
+          Every feature on CMS Alpine exists because a musician needed it.
+          Nothing is there for show.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="pillars" role="list">
+
+      <article class="pillar" role="listitem">
+        <span class="pillar__number" aria-hidden="true">01</span>
+        <h3 class="pillar__title">Engineered for Writing</h3>
+        <p class="pillar__body">
+          16-step sequencer, 8 tracks, parameter locks, and a 128×64 OLED that stays
+          readable at arm's length in a dark studio. The workflow is direct: press a pad,
+          hear a sound, build a pattern. No menu diving.
+        </p>
+      </article>
+
+      <article class="pillar" role="listitem">
+        <span class="pillar__number" aria-hidden="true">02</span>
+        <h3 class="pillar__title">Built to Last</h3>
+        <p class="pillar__body">
+          PA6-GF glass-filled nylon body. Black anodized aluminum knobs. Dark walnut riser.
+          Black oxide screws throughout. When everything else on your desk looks tired in
+          five years, this won't. And if something breaks, you can fix it.
+        </p>
+      </article>
+
+      <article class="pillar" role="listitem">
+        <span class="pillar__number" aria-hidden="true">03</span>
+        <h3 class="pillar__title">Fully Open</h3>
+        <p class="pillar__body">
+          Open firmware and open hardware. The source code, schematics,
+          and STL files for every printed part will be on GitHub.
+          Modify it, print your own case, fork the firmware.
+          You own what you build.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================================
+       NOTIFY TEASER (bottom of index)
+  ====================================================== -->
+  <section class="notify-bar" aria-labelledby="notify-index-heading">
+    <div class="notify-bar__inner">
+      <div class="notify-bar__copy">
+        <h3 id="notify-index-heading">Be first to hear.</h3>
+        <p>No newsletter. One email when units are ready to order.</p>
+      </div>
+      <form class="notify-form" action="#" method="post" aria-label="Email notification signup">
+        <label for="notify-email-index" class="visually-hidden">Email address</label>
+        <input
+          type="email"
+          id="notify-email-index"
+          class="notify-form__input"
+          placeholder="your@email.com"
+          autocomplete="email"
+          required
+        >
+        <button type="submit" class="notify-form__btn">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__cms">CMS</span>
+        <span class="footer__alpine">&nbsp;Alpine</span>
+      </div>
+
+      <ul class="footer__links" role="list">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html#notify">Contact</a></li>
+      </ul>
+
+      <p class="footer__copy">CMS Alpine &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CMS Alpine specifications — Teensy 4.1, 16-step sequencer, 8 tracks, FM/subtractive/wavetable synthesis, PA6-GF enclosure, walnut riser.">
+  <meta property="og:title" content="CMS Alpine — Product">
+  <meta property="og:description" content="Specs, features, and details on the CMS Alpine desktop groovebox.">
+  <meta property="og:type" content="website">
+  <title>Product — CMS Alpine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+
+  <!-- ======================================================
+       NAV
+  ====================================================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="CMS Alpine home">
+        <span class="nav__cms">CMS</span>
+        <span class="nav__dot" aria-hidden="true"></span>
+        <span class="nav__alpine">Alpine</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="product.html" class="active">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#notify">Contact</a></li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HEADER
+  ====================================================== -->
+  <header class="page-header">
+    <div class="container">
+      <span class="page-header__tag">CMS Alpine — Desktop Groovebox</span>
+      <h1 class="page-header__title">The instrument.</h1>
+      <p class="page-header__sub">
+        Specifications, features, and the reasoning behind every decision.
+        No marketing padding — just what it is and what it does.
+      </p>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       HERO RENDER (LARGE)
+  ====================================================== -->
+  <section class="section" aria-label="Product render">
+    <div class="container">
+      <div class="render-placeholder render-placeholder--large" role="img" aria-label="CMS Alpine — photography coming soon">
+        <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+        <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+        <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+        <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+        <span class="render-placeholder__label">CMS Alpine — Front 3/4 View</span>
+        <span class="render-placeholder__sublabel">Photography Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       SPECIFICATIONS
+  ====================================================== -->
+  <section class="section specs-section" id="specs" aria-labelledby="specs-heading">
+    <div class="container">
+
+      <hr class="rule-red" aria-hidden="true">
+
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Technical specifications</span>
+        <h2 class="section-header__title" id="specs-heading">Specifications</h2>
+        <p class="section-header__body">
+          Current target spec. Some details subject to change during development.
+          <span class="text-mono">Rev. 0.1 — March 2026</span>
+        </p>
+      </div>
+
+      <div class="scroll-x">
+        <table class="specs-table" aria-label="CMS Alpine technical specifications">
+          <thead class="visually-hidden">
+            <tr>
+              <th scope="col">Specification</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Platform</th>
+              <td>
+                Teensy 4.1
+                <span class="spec-note">600 MHz ARM Cortex-M7 — PJRC Audio Shield</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Audio</th>
+              <td>
+                44.1 kHz / 16-bit stereo
+                <span class="spec-note">Stereo out (3.5 mm TRS) — Headphone out (3.5 mm TRS)</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Synthesis</th>
+              <td>
+                FM, Subtractive, Wavetable
+                <span class="spec-note">Switchable and layerable per track — Phase 4 target</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Tracks</th>
+              <td>
+                8 tracks
+                <span class="spec-note">4 synth + drum machine + 3 MIDI out — Phase 3 target</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Sequencer</th>
+              <td>
+                16-step per track
+                <span class="spec-note">Parameter locks — Pattern chaining — Phase 3 target</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Controls</th>
+              <td>
+                10 knobs, 32 pads (4×4×2), 6 transport buttons
+                <span class="spec-note">Black anodized aluminum knobs — Black silicone pads with red LED backlight</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Display</th>
+              <td>
+                128×64 OLED — white on black
+                <span class="spec-note">Adjustable brightness — no color, no backlight bleed</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Connectivity</th>
+              <td>
+                USB-C (power + MIDI) — MIDI in / out / thru (5-pin DIN) — Stereo out — Headphone out
+                <span class="spec-note">Phase 2+ target for full MIDI I/O</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Power</th>
+              <td>
+                Internal 18650 Li-ion cell — USB-C charging
+                <span class="spec-note">Estimated 4–6 hr battery life — Phase 3 target</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Storage</th>
+              <td>
+                MicroSD card slot (Teensy 4.1 built-in)
+                <span class="spec-note">Pattern save/load — Sample storage — Phase 3 target</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Enclosure</th>
+              <td>
+                PA6-GF matte black — walnut side panels
+                <span class="spec-note">Glass-filled nylon body — Dark walnut riser, 15° angle — Black oxide hardware throughout</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Serviceability</th>
+              <td>
+                Fully user-serviceable
+                <span class="spec-note">M3 black oxide screws — brass heat-set inserts — no glue, no clips</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Firmware</th>
+              <td>
+                Open source
+                <span class="spec-note">Arduino / Teensyduino — PJRC Audio Library — Custom code welcome — GitHub</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Hardware Design</th>
+              <td>
+                Open source
+                <span class="spec-note">STL files for all printed parts — Schematics — PCB files — GitHub — print your own</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FEATURE SECTIONS
+  ====================================================== -->
+  <section class="section" aria-labelledby="features-heading">
+    <div class="container">
+
+      <hr class="rule-red" aria-hidden="true">
+
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">In depth</span>
+        <h2 class="section-header__title" id="features-heading">Features</h2>
+      </div>
+
+      <!-- Feature: Synthesis -->
+      <div class="feature-block">
+        <div class="feature-block__text">
+          <span class="feature-block__tag">Sound engine</span>
+          <h3 class="feature-block__title">Three engines. One box.</h3>
+          <p class="feature-block__body">
+            CMS Alpine runs FM, subtractive, and wavetable synthesis on the same hardware,
+            switchable per track. Not a jack of all trades — each engine is implemented properly,
+            informed by the Mutable Instruments approach: do it right or don't do it.
+          </p>
+          <ul class="feature-block__list" aria-label="Synthesis engine features">
+            <li>4-operator FM with configurable algorithms</li>
+            <li>2-oscillator subtractive with resonant filter</li>
+            <li>Wavetable with interpolated scanning</li>
+            <li>Per-voice ADSR envelope, LFO modulation</li>
+            <li>4–6 voice polyphony (Phase 2+)</li>
+          </ul>
+        </div>
+        <div class="feature-block__visual">
+          <div class="render-placeholder render-placeholder--gallery" role="img" aria-label="Synthesis engine panel detail — photography coming soon">
+            <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+            <span class="render-placeholder__label">Sound Engine</span>
+            <span class="render-placeholder__sublabel">OLED display detail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature: Sequencer -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-block__text">
+          <span class="feature-block__tag">Sequencer</span>
+          <h3 class="feature-block__title">16 steps. 8 tracks. Stay in the groove.</h3>
+          <p class="feature-block__body">
+            The sequencer is direct. Each of the 16 red-backlit pads is a step.
+            Press to toggle. Hold to set parameter locks — pitch, filter, envelope,
+            anything on a knob can be locked to a specific step. No mode switching,
+            no submenu, just the pads and what they do.
+          </p>
+          <ul class="feature-block__list" aria-label="Sequencer features">
+            <li>16-step sequencer per track</li>
+            <li>Parameter locks on every knob</li>
+            <li>Pattern chaining (Phase 3)</li>
+            <li>Swing and groove quantize</li>
+            <li>MIDI clock in / out sync</li>
+          </ul>
+        </div>
+        <div class="feature-block__visual">
+          <div class="render-placeholder render-placeholder--gallery" role="img" aria-label="Step pads — photography coming soon">
+            <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+            <span class="render-placeholder__label">Step Pads</span>
+            <span class="render-placeholder__sublabel">Red-backlit 4×4 grid</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature: Enclosure -->
+      <div class="feature-block">
+        <div class="feature-block__text">
+          <span class="feature-block__tag">Enclosure</span>
+          <h3 class="feature-block__title">Materials that earn their place.</h3>
+          <p class="feature-block__body">
+            The body is PA6-GF — glass-filled nylon. Not cheap ABS, not expensive aluminum.
+            PA6-GF is what engineers specify when the part needs to be rigid, chemically
+            resistant, dimensionally stable, and naturally matte black. It feels dense.
+            It doesn't flex. The walnut riser is hand-finished with Danish oil — nearly
+            black stain, grain still visible.
+          </p>
+          <ul class="feature-block__list" aria-label="Enclosure details">
+            <li>PA6-GF matte black body</li>
+            <li>Dark walnut riser, 15° ergonomic angle</li>
+            <li>Black anodized aluminum knobs, knurled grip</li>
+            <li>M3 black oxide hardware throughout</li>
+            <li>Brass heat-set inserts — no plastic threads</li>
+          </ul>
+        </div>
+        <div class="feature-block__visual">
+          <div class="render-placeholder render-placeholder--gallery" role="img" aria-label="Enclosure material detail — photography coming soon">
+            <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+            <span class="render-placeholder__label">Enclosure</span>
+            <span class="render-placeholder__sublabel">PA6-GF + walnut detail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature: Open platform -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-block__text">
+          <span class="feature-block__tag">Open source</span>
+          <h3 class="feature-block__title">Open firmware. Open hardware.</h3>
+          <p class="feature-block__body">
+            The firmware is open source — written in Arduino/Teensyduino, readable and
+            buildable by anyone with a C++ compiler. The enclosure is open source —
+            when units ship, every STL file, schematic, and PCB layout goes on GitHub.
+            Print your own case. Modify the panel layout. Fork the firmware and build
+            something we didn't think of. None of this is locked down.
+          </p>
+          <ul class="feature-block__list" aria-label="Open platform features">
+            <li>Open source firmware — Arduino/Teensyduino, C++</li>
+            <li>STL files for all 3D-printed parts — free to download and modify</li>
+            <li>Schematics and PCB files published on GitHub</li>
+            <li>USB-C MIDI — class-compliant, no drivers needed</li>
+            <li>Expansion pins accessible and documented</li>
+          </ul>
+        </div>
+        <div class="feature-block__visual">
+          <div class="render-placeholder render-placeholder--gallery" role="img" aria-label="PCB and internal hardware — photography coming soon">
+            <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+            <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+            <span class="render-placeholder__label">Hardware Platform</span>
+            <span class="render-placeholder__sublabel">Teensy 4.1 + Audio Shield</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       GALLERY
+  ====================================================== -->
+  <section class="section" aria-labelledby="gallery-heading">
+    <div class="container">
+
+      <hr class="rule-red" aria-hidden="true">
+
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Gallery</span>
+        <h2 class="section-header__title" id="gallery-heading">Views</h2>
+        <p class="section-header__body">Product photography in progress. Renders and photos will appear here.</p>
+      </div>
+
+      <div class="gallery-grid" role="list">
+
+        <div class="render-placeholder render-placeholder--gallery" role="listitem" aria-label="Front view — photography coming soon">
+          <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+          <span class="render-placeholder__label">Front View</span>
+        </div>
+
+        <div class="render-placeholder render-placeholder--gallery" role="listitem" aria-label="3/4 angle — photography coming soon">
+          <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+          <span class="render-placeholder__label">3/4 Angle</span>
+        </div>
+
+        <div class="render-placeholder render-placeholder--gallery" role="listitem" aria-label="Detail — knobs and display — photography coming soon">
+          <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+          <span class="render-placeholder__label">Knobs + Display</span>
+        </div>
+
+        <div class="render-placeholder render-placeholder--gallery" role="listitem" aria-label="Step pads lit — photography coming soon">
+          <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+          <span class="render-placeholder__label">Pads (lit)</span>
+        </div>
+
+        <div class="render-placeholder render-placeholder--gallery" role="listitem" aria-label="Walnut riser detail — photography coming soon">
+          <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+          <span class="render-placeholder__label">Walnut Riser</span>
+        </div>
+
+        <div class="render-placeholder render-placeholder--gallery" role="listitem" aria-label="Rear panel — photography coming soon">
+          <span class="render-placeholder__corner render-placeholder__corner--tl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--tr" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--bl" aria-hidden="true"></span>
+          <span class="render-placeholder__corner render-placeholder__corner--br" aria-hidden="true"></span>
+          <span class="render-placeholder__label">Rear Panel</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       NOTIFY / EMAIL SIGNUP
+  ====================================================== -->
+  <section class="notify-bar" id="notify" aria-labelledby="notify-heading">
+    <div class="notify-bar__inner">
+      <div class="notify-bar__copy">
+        <h3 id="notify-heading">Units are not available yet.</h3>
+        <p>
+          CMS Alpine is in active development. Leave your email and we'll send one
+          message when it's ready to order. No newsletter, no spam.
+        </p>
+      </div>
+      <form class="notify-form" action="#" method="post" aria-label="Email notification signup">
+        <label for="notify-email-product" class="visually-hidden">Email address</label>
+        <input
+          type="email"
+          id="notify-email-product"
+          class="notify-form__input"
+          placeholder="your@email.com"
+          autocomplete="email"
+          required
+        >
+        <button type="submit" class="notify-form__btn">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__cms">CMS</span>
+        <span class="footer__alpine">&nbsp;Alpine</span>
+      </div>
+
+      <ul class="footer__links" role="list">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#notify">Contact</a></li>
+      </ul>
+
+      <p class="footer__copy">CMS Alpine &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

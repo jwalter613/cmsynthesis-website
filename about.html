@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About CMS Alpine — the story, the philosophy, and the team behind the instrument.">
+  <meta property="og:title" content="About — CMS Alpine">
+  <meta property="og:description" content="CMS Alpine started as a question: what would a groovebox look like if every decision was made for the musician, not the spec sheet?"
+  <meta property="og:type" content="website">
+  <title>About — CMS Alpine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+
+  <!-- ======================================================
+       NAV
+  ====================================================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="CMS Alpine home">
+        <span class="nav__cms">CMS</span>
+        <span class="nav__dot" aria-hidden="true"></span>
+        <span class="nav__alpine">Alpine</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="product.html#notify">Contact</a></li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HEADER
+  ====================================================== -->
+  <header class="page-header">
+    <div class="container">
+      <span class="page-header__tag">The story</span>
+      <h1 class="page-header__title">Why this exists.</h1>
+      <p class="page-header__sub">
+        An honest account of where CMS Alpine comes from and what it's trying to be.
+      </p>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       STORY
+  ====================================================== -->
+  <section class="section" aria-labelledby="story-heading">
+    <div class="container">
+
+      <div class="story-section">
+
+        <hr class="rule-red" aria-hidden="true">
+
+        <p class="story-lead" id="story-heading">
+          CMS Alpine started as a question: what would a groovebox look like if
+          every decision was made for the musician, not the spec sheet?
+        </p>
+
+        <div class="story-body">
+          <p>
+            Not a different feature list. Just a different set of priorities —
+            that every decision about materials, layout, and controls should be made
+            in service of the person using it, not in service of the render
+            or the trade show.
+          </p>
+
+          <p>
+            Most grooveboxes are designed to look impressive. Colorful pads.
+            LED rings. Bright screens. There's nothing wrong with that, but
+            it's not the only way. Some of the best tools ever made were
+            the ones nobody looked twice at — until they needed one that actually worked.
+            The field recorder. The workhorse mixer. The keyboard that outlived
+            three computers. Matte. Quiet. Nothing that didn't need to be there.
+          </p>
+
+          <p>
+            That's the direction we're heading. Matte black PA6-GF body.
+            Dark walnut riser. Red-backlit pads and nothing else in color.
+            A white OLED display because white on black is readable in a dark room
+            without destroying your night vision. Black oxide screws because silver
+            hardware looks cheap against a black panel.
+          </p>
+
+          <p>
+            The firmware is open source. The enclosure design is open source —
+            when the first units ship, the STL files for every printed part go
+            up on GitHub. Print your own case. Modify the layout. Replace the
+            wood panels. Fork the firmware and build something we didn't think of.
+            This is intentional, not incidental.
+          </p>
+
+          <p>
+            The enclosure is designed to be disassembled with a standard screwdriver.
+            If something fails in five years, you should be able to fix it — or find
+            someone who can. Most consumer electronics are designed to be replaced;
+            CMS Alpine is designed to be repaired.
+          </p>
+
+          <p>
+            It's in active development. The first units won't be ready for a while.
+            But the direction is clear, and the hardware design is locked in.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       PRINCIPLES
+  ====================================================== -->
+  <section class="section" aria-labelledby="principles-heading">
+    <div class="container">
+
+      <hr class="rule-red" aria-hidden="true">
+
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Design principles</span>
+        <h2 class="section-header__title" id="principles-heading">What we're building toward.</h2>
+      </div>
+
+      <ul class="principles-list" aria-label="Design principles">
+
+        <li>
+          <span class="principle-name">Utilitarian</span>
+          <span class="principle-desc">
+            Every element on the panel has a function. The logo is small.
+            There is no decorative chrome, no unnecessary LED color, nothing
+            that exists to look impressive rather than to be useful.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Repairable</span>
+          <span class="principle-desc">
+            Screws, not glue. Brass heat-set inserts, not plastic threads that strip.
+            Standard M3 hardware throughout so you're not hunting for proprietary parts.
+            The internals are accessible without special tools.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Durable</span>
+          <span class="principle-desc">
+            PA6-GF is not what cheap synths are made from. It's what structural
+            components in automotive and industrial applications are made from.
+            It doesn't flex, doesn't yellow, doesn't scratch the way painted plastic does.
+            This thing should survive being in a bag for five years.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Open Source</span>
+          <span class="principle-desc">
+            The firmware is open source — read it, modify it, share what you make.
+            The enclosure design is open source — the STL files for every printed part
+            will be published on GitHub when the first units ship. Print your own case,
+            change the layout, swap the wood panels for something else entirely.
+            The Teensy 4.1 has expansion pins and the design assumes you might use them.
+            Treat it as your own.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Timeless</span>
+          <span class="principle-desc">
+            Matte black and dark wood are not a trend. They're a choice that ages well.
+            In ten years this should look like a considered instrument, not a dated gadget.
+            The design borrows from objects that have already proven they hold up:
+            the field recorder, the vintage console mixer, instruments built before
+            planned obsolescence was a strategy.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Direct</span>
+          <span class="principle-desc">
+            Every knob should do one clear thing. Every pad should be reachable without
+            menus. The OLED is for feedback, not navigation. The goal is that an hour
+            into a session you stop thinking about the interface and start thinking
+            about the music.
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       THE TEAM
+  ====================================================== -->
+  <section class="section" aria-labelledby="team-heading">
+    <div class="container">
+
+      <hr class="rule-red" aria-hidden="true">
+
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">The people</span>
+        <h2 class="section-header__title" id="team-heading">The team.</h2>
+        <p class="section-header__body">
+          CMS Alpine is a small distributed team. Everyone is doing this because
+          they want the instrument to exist.
+        </p>
+      </div>
+
+      <div class="team-grid" role="list">
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">DSP</p>
+          <p class="team-member__name">Vera</p>
+          <p class="team-member__location">Prague</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">Embedded</p>
+          <p class="team-member__name">Finn</p>
+          <p class="team-member__location">Galway</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">Hardware</p>
+          <p class="team-member__name">Otto</p>
+          <p class="team-member__location">Stuttgart</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">UI / UX</p>
+          <p class="team-member__name">Lena</p>
+          <p class="team-member__location">Malmö — Berlin</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">Mechanical</p>
+          <p class="team-member__name">Cal</p>
+          <p class="team-member__location">Vermont</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">Project</p>
+          <p class="team-member__name">Margot</p>
+          <p class="team-member__location">Lyon — Amsterdam</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">Sound Design</p>
+          <p class="team-member__name">Ryo</p>
+          <p class="team-member__location">Kyoto — Amsterdam</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">App Firmware</p>
+          <p class="team-member__name">Tomás</p>
+          <p class="team-member__location">Brno</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">PCB Layout</p>
+          <p class="team-member__name">Grace</p>
+          <p class="team-member__location">Taipei — San Jose</p>
+        </article>
+
+        <article class="team-member" role="listitem">
+          <p class="team-member__role">Panel Graphics</p>
+          <p class="team-member__name">Hana</p>
+          <p class="team-member__location">Seoul — Hamburg</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       REFERENCES — what we're learning from
+  ====================================================== -->
+  <section class="section" aria-labelledby="references-heading">
+    <div class="container">
+
+      <hr class="rule-red" aria-hidden="true">
+
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Context</span>
+        <h2 class="section-header__title" id="references-heading">What we're learning from.</h2>
+        <p class="section-header__body">
+          Not a mood board. Objects and projects that demonstrated something
+          worth paying attention to.
+        </p>
+      </div>
+
+      <ul class="principles-list" aria-label="Influential references">
+
+        <li>
+          <span class="principle-name">ThinkPad X1 Carbon</span>
+          <span class="principle-desc">
+            Matte black, muted red, built for actual use. Proof that restraint in
+            materials and color results in something that looks as good the day
+            it's made as it does five years later. The TrackPoint is the direct
+            ancestor of our accent color.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Elektron Digitone</span>
+          <span class="principle-desc">
+            The right idea about layout density. Every encoder does something real.
+            The workflow is demanding but not arbitrary — there's logic to where
+            things are. We disagree on the silver aluminum finish, but the
+            seriousness of the instrument is exactly the register we're after.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Mutable Instruments</span>
+          <span class="principle-desc">
+            Émilie Gillet's approach to DSP: do the math correctly, document it
+            properly, and release the source code. Braids, Plaits, and Clouds are
+            reference implementations for the synthesis engines we're building.
+            The firmware philosophy of CMS Alpine is directly downstream of this work.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Teenage Engineering OP-1 Field</span>
+          <span class="principle-desc">
+            Proof that an instrument can be visually distinctive without being noisy.
+            The matte black Field edition especially. We're not copying the TE aesthetic —
+            their design language is different — but the commitment to material quality
+            at that price point is the benchmark.
+          </span>
+        </li>
+
+        <li>
+          <span class="principle-name">Braun / Dieter Rams</span>
+          <span class="principle-desc">
+            The ten principles still hold. "Good design is as little design as possible."
+            Nothing on the CMS Alpine panel exists purely to fill space. If a label
+            can be removed because the control is obvious, it will be.
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ======================================================
+       NOTIFY CTA
+  ====================================================== -->
+  <section class="notify-bar" aria-labelledby="notify-about-heading">
+    <div class="notify-bar__inner">
+      <div class="notify-bar__copy">
+        <h3 id="notify-about-heading">Follow the build.</h3>
+        <p>
+          One email when CMS Alpine is ready to order.
+          No newsletter, no marketing drip.
+        </p>
+      </div>
+      <form class="notify-form" action="#" method="post" aria-label="Email notification signup">
+        <label for="notify-email-about" class="visually-hidden">Email address</label>
+        <input
+          type="email"
+          id="notify-email-about"
+          class="notify-form__input"
+          placeholder="your@email.com"
+          autocomplete="email"
+          required
+        >
+        <button type="submit" class="notify-form__btn">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__cms">CMS</span>
+        <span class="footer__alpine">&nbsp;Alpine</span>
+      </div>
+
+      <ul class="footer__links" role="list">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html#notify">Contact</a></li>
+      </ul>
+
+      <p class="footer__copy">CMS Alpine &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
