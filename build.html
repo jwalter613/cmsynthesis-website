@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to build and test a CMS Alpine prototype from current project files.">
+  <meta property="og:title" content="Build — CMS Alpine">
+  <meta property="og:description" content="Step-by-step prototype build path from project files to first sound.">
+  <meta property="og:type" content="website">
+  <title>Build — CMS Alpine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="CMS Alpine home">
+        <span class="nav__cms">CMS</span>
+        <span class="nav__dot" aria-hidden="true"></span>
+        <span class="nav__alpine">Alpine</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="status.html">Status</a></li>
+        <li><a href="build.html" class="active">Build</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html#notify">Contact</a></li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="page-header__tag">Builder docs</span>
+      <h1 class="page-header__title">Build a prototype.</h1>
+      <p class="page-header__sub">
+        Practical path from current docs and firmware to first audible output on real hardware.
+      </p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="links-heading">
+    <div class="container">
+      <hr class="rule-red" aria-hidden="true">
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Source of truth</span>
+        <h2 class="section-header__title" id="links-heading">Project links</h2>
+      </div>
+
+      <ul class="principles-list" aria-label="Project links">
+        <li>
+          <span class="principle-name">Main repo</span>
+          <span class="principle-desc"><a href="https://github.com/jwalter613/cms-alpine" target="_blank" rel="noopener noreferrer">github.com/jwalter613/cms-alpine</a></span>
+        </li>
+        <li>
+          <span class="principle-name">Website repo</span>
+          <span class="principle-desc"><a href="https://github.com/jwalter613/cmsynthesis-website" target="_blank" rel="noopener noreferrer">github.com/jwalter613/cmsynthesis-website</a></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="steps-heading">
+    <div class="container">
+      <hr class="rule-red" aria-hidden="true">
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Execution</span>
+        <h2 class="section-header__title" id="steps-heading">Build sequence</h2>
+      </div>
+
+      <ol class="build-steps" aria-label="Prototype build sequence">
+        <li>
+          <strong>Power only bring-up</strong>
+          Verify MB102 rails and polarity first. Do not connect Teensy/audio modules until rails are confirmed.
+        </li>
+        <li>
+          <strong>Stage 1 checklist</strong>
+          Run the beginner checklist and multimeter drill in `hardware/breadboard/` before adding logic/audio wiring.
+        </li>
+        <li>
+          <strong>Header prep</strong>
+          Solder required pin headers to Teensy 4.1 and Audio Shield for stable breadboard insertion.
+        </li>
+        <li>
+          <strong>Firmware sanity</strong>
+          Flash basic test sketches first (`00_audio_sanity`, `01_oled_sh1106_sanity`, `02_midi_in_monitor`).
+        </li>
+        <li>
+          <strong>Audio path test</strong>
+          Confirm audible output from demo sketches before moving to unified firmware.
+        </li>
+        <li>
+          <strong>Unified v1 pass</strong>
+          Flash `08_cms_alpine_v1`, then validate controls/display/clock incrementally.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="files-heading">
+    <div class="container">
+      <hr class="rule-red" aria-hidden="true">
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Key files</span>
+        <h2 class="section-header__title" id="files-heading">Start here</h2>
+      </div>
+
+      <ul class="principles-list" aria-label="Key build files">
+        <li>
+          <span class="principle-name">First boot</span>
+          <span class="principle-desc">`firmware/spec/FIRST_BOOT_CHECKLIST_UNIFIED.md`</span>
+        </li>
+        <li>
+          <span class="principle-name">Breadboard</span>
+          <span class="principle-desc">`hardware/breadboard/README_START_HERE.md` and `SESSION_1_CHECKLIST.md`</span>
+        </li>
+        <li>
+          <span class="principle-name">KiCad</span>
+          <span class="principle-desc">`hardware/kicad/cms-alpine-revA/` schematic + PCB + DRC/ERC reports</span>
+        </li>
+        <li>
+          <span class="principle-name">Firmware</span>
+          <span class="principle-desc">`firmware/sketches/` demos plus `08_cms_alpine_v1` unified sketch</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__cms">CMS</span>
+        <span class="footer__alpine">&nbsp;Alpine</span>
+      </div>
+
+      <ul class="footer__links" role="list">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="status.html">Status</a></li>
+        <li><a href="build.html">Build</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://github.com/jwalter613/cms-alpine" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="product.html#notify">Contact</a></li>
+      </ul>
+
+      <p class="footer__copy">CMS Alpine &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
