@@ -55,6 +55,55 @@
   </header>
 
   <!-- ======================================================
+       CURRENT PROGRESS
+  ====================================================== -->
+  <section class="section" aria-labelledby="progress-heading">
+    <div class="container">
+      <hr class="rule-red" aria-hidden="true">
+      <div class="section-header">
+        <span class="section-header__tag" aria-hidden="true">Current status</span>
+        <h2 class="section-header__title" id="progress-heading">Progress as of March 2026</h2>
+        <p class="section-header__body">
+          What is already complete and testable right now.
+        </p>
+      </div>
+
+      <div class="status-grid" role="list">
+        <article class="status-card" role="listitem">
+          <h3>Hardware</h3>
+          <ul class="status-list">
+            <li>KiCad Rev A schematic + PCB created</li>
+            <li>DRC electrical issues cleared for routing</li>
+            <li>Breadboard bring-up docs written for beginners</li>
+          </ul>
+        </article>
+
+        <article class="status-card" role="listitem">
+          <h3>Firmware</h3>
+          <ul class="status-list">
+            <li>Unified v1 sketch scaffolded</li>
+            <li>Drum patterns and demo engines implemented</li>
+            <li>Teensy 4.1 compile checks passing locally</li>
+          </ul>
+        </article>
+
+        <article class="status-card" role="listitem">
+          <h3>Open Project</h3>
+          <ul class="status-list">
+            <li>
+              <a href="https://github.com/jwalter613/cms-alpine" target="_blank" rel="noopener noreferrer">Firmware + Hardware repo</a>
+            </li>
+            <li>
+              <a href="https://github.com/jwalter613/cmsynthesis-website" target="_blank" rel="noopener noreferrer">Website repo</a>
+            </li>
+            <li>Documentation actively updated with each test pass</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
        HERO RENDER (LARGE)
   ====================================================== -->
   <section class="section" aria-label="Product render">
@@ -422,6 +471,12 @@
           CMS Alpine is in active development. Leave your email and we'll send one
           message when it's ready to order. No newsletter, no spam.
         </p>
+        <p class="notify-bar__meta">
+          Follow the code:
+          <a href="https://github.com/jwalter613/cms-alpine" target="_blank" rel="noopener noreferrer">Firmware + Hardware</a>
+          /
+          <a href="https://github.com/jwalter613/cmsynthesis-website" target="_blank" rel="noopener noreferrer">Website</a>
+        </p>
       </div>
       <form class="notify-form" action="#" method="post" aria-label="Email notification signup">
         <label for="notify-email-product" class="visually-hidden">Email address</label>
@@ -451,6 +506,7 @@
       <ul class="footer__links" role="list">
         <li><a href="product.html">Product</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="https://github.com/jwalter613/cms-alpine" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         <li><a href="#notify">Contact</a></li>
       </ul>
 

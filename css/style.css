@@ -653,6 +653,45 @@ code, .mono {
   background-color: var(--bg);
 }
 
+/* --- Current progress ------------------------------------- */
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background-color: var(--border);
+}
+
+.status-card {
+  background-color: var(--bg);
+  padding: var(--spacing-lg);
+}
+
+.status-card h3 {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.status-list {
+  list-style: none;
+}
+
+.status-list li {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.status-list li:last-child {
+  border-bottom: none;
+}
+
+.status-list a {
+  color: var(--text-primary);
+}
+
 /* --- Notify / Email form --------------------------------- */
 
 .notify-bar {
@@ -684,6 +723,22 @@ code, .mono {
 .notify-bar__copy p {
   font-size: 0.875rem;
   color: var(--text-secondary);
+}
+
+.notify-bar__meta {
+  margin-top: var(--spacing-sm);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.notify-bar__meta a {
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+.notify-bar__meta a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .notify-form {
@@ -1038,6 +1093,10 @@ code, .mono {
 
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .status-grid {
+    grid-template-columns: 1fr;
   }
 
   .notify-bar__inner {
